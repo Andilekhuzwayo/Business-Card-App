@@ -2,7 +2,7 @@
     <string name="app_name">Bussines Card app</string>
     <string name="full_name">Andile Khuzwayo</string>
     <string name="professional_title">Android Developer Extraordinary</string>
-    <string name="contact_number">0673260222</string>
+    <string name="contact_number">+27 673260222</string>
     <string name="socialmedia_handle">"@"AndroidDev</string>
     <string name="email">khuzwayoandile269@gmail.com</string>
 </resources>

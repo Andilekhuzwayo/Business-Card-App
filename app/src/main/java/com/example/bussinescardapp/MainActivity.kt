@@ -8,10 +8,12 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
+import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -85,18 +87,44 @@ fun BusinessCardApp(
         }
 
         Column(
+            verticalArrangement = Arrangement.Center,
             horizontalAlignment = Alignment.Start,
-            modifier = Modifier.padding(bottom = 32.dp)
         ) {
-            Text(
-                text = contactNumber
-            )
-            Text(
-                text = socialMediaHandle
-            )
-            Text(
-                text = emailAddress
-            )
+            Row(modifier = Modifier.padding(10.dp)) {
+                Icon(
+                    painter = painterResource(R.drawable.call),
+                    contentDescription = null,
+                    tint = Color(0xFF006D3B),
+                    modifier = Modifier.padding(end = 16.dp)
+                )
+                Text(
+                    text = contactNumber
+                )
+            }
+
+            Row(modifier = Modifier.padding(10.dp)) {
+                Icon(
+                    painter = painterResource(R.drawable.share),
+                    contentDescription = null,
+                    tint = Color(0xFF006D3B),
+                    modifier = Modifier.padding(end = 16.dp)
+                )
+                Text(
+                    text = socialMediaHandle
+                )
+            }
+
+            Row(modifier = Modifier.padding(10.dp)) {
+                Icon(
+                    painter = painterResource(R.drawable.emai_l),
+                    contentDescription = null,
+                    tint = Color(0xFF006D3B),
+                    modifier = Modifier.padding(end = 16.dp)
+                )
+                Text(
+                    text = emailAddress
+                )
+            }
         }
     }
 }
